@@ -1,161 +1,177 @@
-html {
-  background: #bebebe;
-  color: rgb(0, 0, 0);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-body {
+* {
+  padding: 0;
   margin: 0;
-  padding: 0
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  background-color: DodgerBlue;
-}
-
-.flex-container > div {
- 
-  text-align: center;
-
+html,
+body {
+  font-family: 'Lobster', cursive;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  /* background-color: #bebebe; */
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-/* header{
-  background-color: rgb(250, 250, 250);
-  margin: 20px 20px;
-  padding: 20px;
-} */
+a:hover {
+  cursor: pointer;
+}
 
-.logo{
+.gradient {
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+}
+
+.nav-bar {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar > div {
+  justify-content: space-between;
+}
+
+.logo {
   max-block-size: 10vw;
-  margin: 0 0 0 10px;
-  object-fit: cover; 
-  border-radius: 10px;
 }
 
-/* .site-name{
+.site-name {
   font-size: 4vw;
-  margin: 0 0 0 10vw; 
-} */
+  /* margin: 0 0 0 10vw;  */
+}
 
-nav{
-  display:flex;
+nav {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navigation{
-  flex: 1;
-  text-align: right;
-}
-
-.navigation ul li{
+.nav-links ul li {
   list-style: none;
+  justify-content: flex-end;
+  padding-right: 0.5em;
   display: inline-block;
-  padding: 8px 12px;
-  position: relative;
 }
 
-.navigation ul li a{
+.nav-links ul li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 /* Underline animation navigation links */
-.navigation ul li::after{
-  content:'';
+.nav-links ul li::after {
+  content: '';
   width: 0%;
   height: 2px;
-  background:rgb(255, 0, 0);
+  background: rgb(255, 0, 0);
   display: block;
   margin: auto;
   transition: 0.5s;
 }
 
-.navigation ul li:hover::after{
+.nav-links ul li:hover::after {
   width: 100%;
 }
 
 .big-news {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  background-color: rgb(250, 250, 250);
-  margin: 10px 20px;
-  padding: 20px;
-
-  
+  background-color: rgb(220, 220, 220);
+  margin-top: 5em;
 }
 
-.big-news-text-block{
+.big-news-text-block {
   text-align: center;
   margin: 20px;
 }
 
-.small-news{
+.big-news-title {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.small-news {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  margin-top: 5em;
+  display: flex;
   display: grid;
   justify-items: center;
 }
 
-.small-news-card{
+.small-news-card {
+  justify-content: space-around;
+  width: 100%;
   background-color: rgb(250, 250, 250);
-  margin: 10px 20px;
-  padding: 20px;
-  display:flex;
+  margin-bottom: 2em;
   flex-direction: column;
-  max-width: 200px;
   text-align: center;
+  transition: transform 0.2s;
 
   /* Shadow for box */
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
-  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.small-news-card-content {
+  padding: 1em;
+}
+
+.small-news-title {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .small-news-card:hover {
+  cursor: pointer;
   transform: scale(1.05);
 }
 
-.small-news-picture{
+.small-news-picture {
   display: block;
   margin: 0 auto;
   object-fit: contain;
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
 }
 
 /* Hides navigation for mobile */
-@media (max-width:767px) {
-  #navigation-id{
-    display:none;
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
   }
 }
 
 /* Tablet and bigger becomes rows, grid 2 columns */
-@media (min-width:768px) {
-  header{
+@media (min-width: 768px) {
+  header {
     flex-direction: row;
-    text-align: right;
+    text-align: center;
   }
-  .big-news{
+  .big-news {
     flex-direction: row;
   }
-  .big-news-text-block{
+  .big-news-text-block {
     text-align: left;
   }
-  .small-news{
-    grid-template-columns: repeat(2, 1fr);
+  .small-news {
+    grid-template-columns: repeat(3, 2fr);
     gap: 0 20px;
   }
 }
 
 /* Desktop goes 4 grid columns*/
-@media (min-width:992px) {
-  .small-news{
+@media (min-width: 992px) {
+  .small-news {
     grid-template-columns: repeat(4, 1fr);
   }
 }
