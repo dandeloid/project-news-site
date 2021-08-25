@@ -2,105 +2,202 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./news.png">
+    <link rel="icon" href="./news.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
-
     <header>
       <!-- Some kind of logo and navbar -->
-      <nav> 
-        <img class="logo" src="./news.png" alt="logo"/>
-        <h1 class="site-name">The Generic News Site</h1>
-        <div class ="navigation" id="navigation-id">
+      <nav class="nav-bar gradient">
+        <div class="brand-logo">
+          <img class="logo" src="./news.png" alt="logo" />
+        </div>
+        <div class="brand-name">
+          <h1 class="site-name">The Generic News Site</h1>
+        </div>
+        <div class="nav-links">
           <ul>
             <li><a href="#">Big News</a></li>
             <li><a href="#">Small News</a></li>
-            <!-- <li><a href="#">Archive</a></li> -->
+            <li><a href="#">Archive</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <div class="flex-container">
-      <div><img class="logo" src="./news.png" alt="logo"/></div>
-      <div><h1 class="site-name">The Generic News Site</h1></div>
-      <div><ul>
-        <li><a href="#">Big News</a></li>
-        <li><a href="#">Small News</a></li>
-        <!-- <li><a href="#">Archive</a></li> -->
-        <li><a href="#">Contact</a></li>
-      </ul></div>  
-    </div>
-
     <section class="big-news">
       <!-- The big news content -->
-      <img class="big-news-picture" src="https://picsum.photos/400/400" alt="big news"/>
+      <img
+        class="big-news-picture"
+        src="https://picsum.photos/400/400"
+        alt="big news"
+      />
       <div class="big-news-text-block">
-        <h2 class="big-news-title">The Biggest News Right Now</h2>  
+        <h2 class="big-news-title">The Biggest News Right Now</h2>
         <p class="big-news-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit recusandae libero est, suscipit hic omnis quam iure expedita asperiores pariatur voluptatibus soluta. Dolorem aut sapiente culpa, dolore id architecto, facilis dicta animi cupiditate maiores facere unde inventore in ducimus, cumque nam vero corrupti. Tempora cupiditate cum numquam sit quas consequuntur!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+          recusandae libero est, suscipit hic omnis quam iure expedita
+          asperiores pariatur voluptatibus soluta. Dolorem aut sapiente culpa,
+          dolore id architecto, facilis dicta animi cupiditate maiores facere
+          unde inventore in ducimus, cumque nam vero corrupti. Tempora
+          cupiditate cum numquam sit quas consequuntur!
         </p>
-      </div>  
+      </div>
     </section>
 
     <section class="small-news">
       <!-- The other news  -->
       <div class="small-news-card">
-        <img class="small-news-picture" src="https://picsum.photos/200/200" alt="small news">
-        <h3 class="small-news-title">Small News 1</h2>
-        <p class="small-news-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, assumenda.
-        </p>
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 1</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
       </div>
       <div class="small-news-card">
-        <img class="small-news-picture" src="https://picsum.photos/200/201" alt="small news">
-        <h3 class="small-news-title">Small News 2</h2>
-        <p class="small-news-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, assumenda.
-        </p>
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 2</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
       </div>
       <div class="small-news-card">
-        <img class="small-news-picture" src="https://picsum.photos/200/202" alt="small news">
-        <h3 class="small-news-title">Small News 3</h2>
-        <p class="small-news-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, assumenda.
-        </p>
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 3</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
       </div>
       <div class="small-news-card">
-        <img class="small-news-picture" src="https://picsum.photos/200/203" alt="small news">
-        <h3 class="small-news-title">Small News 4</h2>
-        <p class="small-news-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, assumenda.
-        </p>
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 4</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
       </div>
       <div class="small-news-card">
-        <img class="small-news-picture" src="https://picsum.photos/200/204" alt="small news">
-        <h3 class="small-news-title">Small News 5</h2>
-        <p class="small-news-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, assumenda.
-        </p>
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 5</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
       </div>
       <div class="small-news-card">
-        <img class="small-news-picture" src="https://picsum.photos/200/205" alt="small news">
-        <h3 class="small-news-title">Small News 6</h2>
-        <p class="small-news-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, assumenda.
-        </p>
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 6</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
       </div>
       <div class="small-news-card">
-        <img class="small-news-picture" src="https://picsum.photos/200/206" alt="small news">
-        <h3 class="small-news-title">Small News 7</h2>
-        <p class="small-news-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, assumenda.
-        </p>
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 7</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
+      </div>
+      <div class="small-news-card">
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 8</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
+      </div>
+      <div class="small-news-card">
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 9</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
+      </div>
+      <div class="small-news-card">
+        <img
+          class="small-news-picture"
+          src="https://picsum.photos/200/200"
+          alt="small news"
+        />
+        <div class="small-news-card-content">
+          <h3 class="small-news-title">Small News 10</h3>
+          <p class="small-news-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            assumenda.
+          </p>
+        </div>
       </div>
     </section>
-
   </body>
 </html>
