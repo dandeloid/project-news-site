@@ -4,15 +4,32 @@ html {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+body {
+  margin: 0;
+  padding: 0
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+ 
+  text-align: center;
+
+}
+
 a {
   text-decoration: none; 
 }
 
-header{
+/* header{
   background-color: rgb(250, 250, 250);
   margin: 20px 20px;
   padding: 20px;
-}
+} */
 
 .logo{
   max-block-size: 10vw;
@@ -21,10 +38,10 @@ header{
   border-radius: 10px;
 }
 
-.site-name{
+/* .site-name{
   font-size: 4vw;
   margin: 0 0 0 10vw; 
-}
+} */
 
 nav{
   display:flex;
