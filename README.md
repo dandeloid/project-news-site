@@ -1,6 +1,6 @@
 # News Site
 
-Technigo student project for making a responsive News Site with Flexbox and Grid.
+Project for making a responsive News Site with Flexbox and Grid.
 
 ## The problem
 
